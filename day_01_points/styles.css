@@ -1,0 +1,9 @@
+h1 {
+    color: rgb(0, 92, 128);
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+}
+p {
+    color: black;
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+}
+#map { height: 600px; }
