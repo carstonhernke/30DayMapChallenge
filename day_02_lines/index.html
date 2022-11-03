@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+    crossorigin=""></script>
+    <script src="data.js"></script>
+    <title>Day 02 - Lines</title>
+  </head>
+  <body>
+    <h1>Berlin Transit Network</h1>
+    <p>A map of Berlin's transit network, including U-Bahn (subway), S-Bahn (light rail), Tram, and Ferry routes. Data from OpenStreetMap.</p>
+    <div id="map"></div>
+    <i>Use the buttons below to toggle on/off the different layers.</i>
+    <div class="filters">
+      <button type="button" id="ubahnfilter">
+        <img class = 'filtericon' src="https://upload.wikimedia.org/wikipedia/commons/a/a3/U-Bahn.svg">
+        U-Bahn
+      </button>
+      <button type="button" id="sbahnfilter">
+        <img class = 'filtericon' src="https://upload.wikimedia.org/wikipedia/commons/e/e7/S-Bahn-Logo.svg">
+        S-Bahn
+      </button>
+      <button type="button" id="tramfilter">
+        <img class = 'filtericon' src="https://upload.wikimedia.org/wikipedia/commons/archive/a/a6/20211030130925%21Tram-Logo.svg">
+        Tram
+      </button>
+      <button type="button" id="ferryfilter">
+        <img class = 'filtericon' src="https://upload.wikimedia.org/wikipedia/commons/d/d6/F%C3%A4hre-Logo-BVG.svg">
+        Ferry
+      </button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
