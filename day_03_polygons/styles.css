@@ -1,0 +1,60 @@
+h1 {
+    color: #D8DEE9;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 4em;
+}
+h2 {
+    color: #D8DEE9;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2em;
+    font-style: italic;
+}
+h3 {
+    color: #D8DEE9;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2em;
+    font-variant-caps: all-petite-caps;
+}
+i {
+    color: #3B4252;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.header{
+    text-align:center;
+    flex: 4;
+}
+#footer{
+    display: flex;
+    justify-content: right;
+    flex: .1;
+    color: #7c8085;
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    font-size: .7em;
+}
+a {
+    color: #7c8085;
+}
+#map { 
+    flex: 15;
+    background: transparent;
+}
+#scale{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+}
+.scalebox {
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Libre Baskerville', serif;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: black;
+}

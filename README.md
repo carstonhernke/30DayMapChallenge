@@ -1,8 +1,8 @@
 # 30DayMapChallenge
 All the code behind my maps for the 2022 #30DayMapChallenge. More information here: https://30daymapchallenge.com/.
 
-| **Day** | **Topic** | **Map Name**           | **Description**                                                                           | **Link**                                                                         |
-|---------|-----------|------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| 1       | Points    | World Airports         | A basic interactive web map which uses Leaflet.js to show major airports around the world | [World Airports](https://www.carston.org/30DayMapChallenge/day_01_points)        |
-| 2       | Lines     | Berlin Transit Network | A map of Berlin's train and ferry lines, with layers that can be togged on/off            | [Berlin Transit Network](https://www.carston.org/30DayMapChallenge/day_02_lines) |
-| 3       | Polygons  |                        |                                                                                           |                                                                                  |
+| **Day** | **Topic** | **Map Name**                | **Description**                                                                           | **Link**                                                                                 |
+|---------|-----------|-----------------------------|-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
+| 1       | Points    | World Airports              | A basic interactive web map which uses Leaflet.js to show major airports around the world | [World Airports](https://www.carston.org/30DayMapChallenge/day_01_points)                |
+| 2       | Lines     | Berlin Transit Network      | A map of Berlin's train and ferry lines, with layers that can be togged on/off            | [Berlin Transit Network](https://www.carston.org/30DayMapChallenge/day_02_lines)         |
+| 3       | Polygons  | Lake Minnetonka Depth Chart | A map showing contours representing depth for Lake Minnetonka in Minnesota, USA           | [Lake Minnetonka Depth Chart](https://www.carston.org/30DayMapChallenge/day_03_polygons) |
