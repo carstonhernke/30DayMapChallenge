@@ -95,14 +95,14 @@ const config = {
                 type: 'linear',
                 title: {
                     display: true,
-                    text: 'Amount of Blue',
+                    text: 'Amount of Red',
                   }
             },
             y: {
                 type: 'linear',
                 title: {
                     display: true,
-                    text: 'Amount of Red'
+                    text: 'Amount of Blue'
                   }
             }
         }}
