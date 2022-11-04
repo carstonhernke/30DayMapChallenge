@@ -1,0 +1,55 @@
+h1 {
+    color: #17ad00;
+    font-family: 'Gloria Hallelujah', serif;
+    font-size: 3em;
+    font-weight:800;
+}
+h2 {
+    color: #8c8c8c;
+    font-family: 'Gloria Hallelujah', serif;
+    font-size: 1em;
+    font-weight:800;
+}
+.header{
+    text-align:center;
+    flex: 1;
+}
+#footer{
+    display: flex;
+    justify-content: right;
+    flex: .1;
+    color: #7c8085;
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    font-size: .7em;
+}
+a {
+    color: #7c8085;
+}
+#mychart { 
+    flex: 8;
+}
+#toolbox{
+    flex: 2;
+    display: block;
+}
+#crayondrawer{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+#crayonname{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #17ad00;
+    font-family: 'Gloria Hallelujah', serif;
+    font-size: 3em;
+    font-weight:300;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: white;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js"></script>
+    <script src="data.js"></script>
+    <title>Day 04 - Green</title>
+  </head>
+  <body>
+    <div class = 'header'>
+      <h1>All the green Crayola crayons, mapped</h1>
+      <h2>This map arranges each green Crayola standard color based on how much red and blue it contains.</h2>
+    </div>
+    <div>
+      <canvas id="myChart"></canvas>
+    </div>
+    <div id="toolbox">
+      <div id="crayonname">
+        click on a crayon below
+      </div>
+      <div id="crayondrawer">
+      </div>
+    </div>
+    <div id="footer">Crayon color data from:&nbsp;<a href="https://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors#Standard_colors">Wikipedia</a></div>
+    <script src="main.js"></script>
+  </body>
+</html>
