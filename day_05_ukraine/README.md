@@ -1,0 +1,2 @@
+# Day 5 Notes
+Theme of today was Ukraine. I found some really interesting ancestry data on the US Census website. I was trying to convert it to JSON and join this with map data when I realized that the new US Census Website has the exact same functionality. So I built the map there, and put a link to it here.
