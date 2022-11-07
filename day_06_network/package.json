@@ -1,0 +1,21 @@
+{
+    "name": "pure-js-mapbox",
+    "version": "0.0.0",
+    "license": "MIT",
+    "scripts": {
+        "start": "webpack-dev-server --config webpack.config.js  --progress --hot --open",
+        "start-local": "webpack-dev-server --env.local --progress --hot --open",
+        "build": "webpack --config webpack.config.js --display-error-details -p"
+    },
+    "dependencies": {
+        "@deck.gl/core": "^8.8.0",
+        "@deck.gl/layers": "^8.8.0",
+        "@deck.gl/mapbox": "^8.8.0",
+        "mapbox-gl": "^1.13.0"
+    },
+    "devDependencies": {
+        "webpack": "^4.20.2",
+        "webpack-cli": "^3.3.12",
+        "webpack-dev-server": "^3.1.1"
+    }
+}

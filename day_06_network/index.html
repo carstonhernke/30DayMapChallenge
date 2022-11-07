@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset='UTF-8' />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css" />
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.13.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Day 6 - Network</title>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.13.0/mapbox-gl.css' rel='stylesheet' />
+  </head>
+  <body>
+    <div id="layout" class="pure-g">
+        <div class="sidebar pure-u-1 pure-u-md-1-4">
+          <div class="header">
+              <h1 class="brand-title">The Helsinki Transit Network in 3D</h1>
+              <h2 class="brand-tagline">This is a map built with deck.gl. Data from&nbsp;<a href="https://zenodo.org/record/1186215#.Y2lPJuzMLzc">Aalto University</a>.</h2>
+          </div>
+        </div>
+        <div class="content pure-u-1 pure-u-md-3-4">
+            <div id="map"></div>
+        </div>
+    </div>
+    <script src="routes.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
