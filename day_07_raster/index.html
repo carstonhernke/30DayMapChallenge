@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset='UTF-8' />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+    crossorigin=""></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Day 7 - Raster</title>
+  </head>
+  <body>
+    <div id="layout" class="pure-g">
+        <div class="sidebar pure-u-1-5">
+          <div class="header">
+              <h1 class="brand-title">Minneapolis: 1890 and Today</h1>
+              <h2 class="brand-tagline">A map produced in 1890 digitized and overlaid on a modern web map. The historical map is from the&nbsp;<a href="https://collection.mndigital.org/catalog/mpls:312#?c=&m=&s=&cv=&xywh=-4170%2C-177%2C15186%2C8926">Minnesota Digital Library</a>.</h2>
+              <div id="settings">
+                <div id="settings-title">Settings</div>
+                <button id="toggle-map-button" class="pure-button pure-button-primary">Toggle Historical Map</button>
+                
+                <div class="slidecontainer">
+                  <div>Historical Map Opacity</div>
+                  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
+              </div>
+            </div>
+            <div id="footer">
+              <div id="settings-title">Created by <a href='https://www.carston.org/'>Carston Hernke</a></div>
+              </div>
+            </div>
+        </div>
+        <div class="content pure-u-4-5">
+            <div id="map"></div> 
+        </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,151 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(61, 146, 201);
+}
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+h3 {
+    font-weight: 100;
+}
+
+/* LAYOUT CSS */
+.pure-img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+#layout {
+    padding: 0;
+}
+
+.header {
+    margin:0 2em 0;
+    text-align: left;
+    align-self: center;
+}
+
+.sidebar {
+    background: rgb(61, 79, 93);
+    color: #fff;
+    display:flex;
+}
+.brand-title {
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+.brand-tagline {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 250;
+    margin: 0;
+    color: rgb(176, 202, 219);
+    padding-bottom: 5vh;
+}
+#map {
+    height: 100vh;
+    width: 80vw;
+}
+.content {
+    position: fixed;
+    display: block;
+}
+#settings {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    height: 10vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    width: 80%;
+}
+#settings-title{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+#toggle-map-button{
+    text-transform: uppercase;
+    background-color: rgb(61, 146, 201);
+    margin-bottom: 20px;
+}
+#test_box {
+    background-color: blue;
+    height: 100vh;
+    width: 80vw;
+}
+#footer {
+    position: absolute;
+    bottom: 0px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: .8em;
+    margin: 0 2em 0;
+}
+
+#slidecontainer {
+    width: 100%; /* Width of the outside container */
+    font-size: 1em;
+    align-content: center;
+    margin-bottom: 20px;
+}
+  
+  /* The slider itself */
+.slider {
+-webkit-appearance: none;  /* Override default CSS styles */
+appearance: none;
+width: 100%; /* Full-width */
+height: 25px; /* Specified height */
+background: #d3d3d3; /* Grey background */
+outline: none; /* Remove outline */
+opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+-webkit-transition: .2s; /* 0.2 seconds transition on hover */
+transition: opacity .2s;
+}
+  
+/* Mouse-over effects */
+.slider:hover {
+opacity: 1; /* Fully shown on mouse-over */
+}
+  
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+-webkit-appearance: none; /* Override default look */
+appearance: none;
+width: 25px; /* Set a specific slider handle width */
+height: 25px; /* Slider handle height */
+background: rgb(61, 146, 201); /* Green background */
+cursor: pointer; /* Cursor on hover */
+}
+  
+.slider::-moz-range-thumb {
+width: 25px; /* Set a specific slider handle width */
+height: 25px; /* Slider handle height */
+background: #04AA6D; /* Green background */
+cursor: pointer; /* Cursor on hover */
+}
+
+@media (min-width: 48em) {
+    .content {
+        margin-left: 20%;
+    }
+
+
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+    }
+
+    .footer {
+        text-align: center;
+    }
+}
