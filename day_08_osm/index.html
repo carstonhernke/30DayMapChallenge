@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset='UTF-8' />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+    crossorigin=""></script>
+    <script src="https://kit.fontawesome.com/5a8b124471.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Oslo Nordic Ski Map</title>
+  </head>
+  <body>
+    <div id="app">
+          <div class="header">
+            <h1 class="header-text"><i class="fas fa-skiing-nordic"></i> La oss gå på ski i Oslo!</h1>
+          </div>
+          <div id="map"></div> 
+          <div id="settings">
+            <div class="settings-text">What kind of skiing are you doing today?</div>
+            <a id="select_classic" class="button4" style="background-color:#5E81AC">Classic</a>
+            <a id="select_skate" class="button4" style="background-color:#D08770">Skate</a>
+          </div>
+    </div>
+    <script src="oslo_nordic.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
