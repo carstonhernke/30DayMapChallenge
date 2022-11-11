@@ -1,0 +1,24 @@
+{
+    "name": "pure-js-maplibre",
+    "version": "0.0.0",
+    "license": "MIT",
+    "scripts": {
+        "start": "webpack-dev-server --progress --hot --open",
+        "start-local": "webpack-dev-server --env.local --progress --hot --open",
+        "build": "browserify app.js -o dist/bundle.js && cp index.html dist/index.html && cp styles.css dist/styles.css && cd dist && python3 -m http.server"
+    },
+    "dependencies": {
+        "@deck.gl/core": "^8.8.18",
+        "@deck.gl/layers": "^8.8.0",
+        "@deck.gl/mapbox": "^8.8.0",
+        "@deck.gl/mesh-layers": "^8.8.18",
+        "@loaders.gl/obj": "^3.2.11",
+        "loaders.gl": "^0.3.5",
+        "maplibre-gl": "^1.13.0"
+    },
+    "devDependencies": {
+        "webpack": "^4.20.2",
+        "webpack-cli": "^3.3.12",
+        "webpack-dev-server": "^3.1.1"
+    }
+}
