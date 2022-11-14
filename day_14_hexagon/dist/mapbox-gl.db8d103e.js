@@ -1,0 +1,2 @@
+("undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:"undefined"!=typeof window?window:"undefined"!=typeof global?global:{}).parcelRequire86c5.register("efaSu",(function(e,o){var n,i,f,l,t;n=e.exports,i="printMsg",f=()=>t,l=e=>t=e,Object.defineProperty(n,i,{get:f,set:l,enumerable:!0,configurable:!0}),t=function(){console.log("This is a message from the demo package")}}));
+//# sourceMappingURL=mapbox-gl.db8d103e.js.map

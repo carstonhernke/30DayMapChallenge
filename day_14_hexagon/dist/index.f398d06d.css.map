@@ -1,0 +1,1 @@
+{"mappings":"AAAA;;;;;;AAMA","sources":["src/components/map.css"],"sourcesContent":[".map-wrap {\n    position: relative;\n    width: 100vw;\n    height: 100vh; /* calculate height of the screen minus the heading */\n}\n  \n.map {\nposition: absolute;\nwidth: 100%;\nheight: 100%;\n}"],"names":[],"version":3,"file":"index.f398d06d.css.map","sourceRoot":"/__parcel_source_root/"}
