@@ -45,31 +45,40 @@ const layers = []
 const hexData = [
   ];
 
-function convertToHexData(arr) {
+function convertToHexagons(geo, resolution) {
+    if(geo['features'].length == 0){
+        return []
+    }
     var outputArray = []
-    arr.forEach((element, index) => {
-        var newElement = {
-            hex: element,
-            count: 1,
-        };
-        outputArray.push(newElement) ;
-      });
-    
+    geo['features'].forEach((element, index) => {
+        var cells = polygonToCells(element['geometry']['coordinates'], resolution, true)
+        cells.forEach((element, index) => {
+            var newElement = {
+                hex: element,
+                count: 1,
+            };
+            outputArray.push(newElement) ;
+          });
+      })    
     return outputArray
 }
 
-const geoJsonData = {
+function getArea(geo){
+    var area = (turf.area(geo)/1000000).toFixed(2)
+    return area
+}
+
+const emptyGeoJsonData = {
     "type": "FeatureCollection",
-    "features": [
-    ]
+    "features": []
   }
 
 const selectedFeatureIndexes = [];
 
 function App() {
-    const [geoData, setGeoData] = useState(geoJsonData);
+    const [geoData, setGeoData] = useState(emptyGeoJsonData);
     const [area, setArea] = useState('N/A');
-    const [hexagons, setHexagons] = useState(hexData)
+    const [h3Level, setH3Level] = useState(5)
 
     const editableLayer = new EditableGeoJsonLayer({
         id: 'geojson-layer',
@@ -81,12 +90,6 @@ function App() {
             if(editType == 'addFeature'){
                 console.log(`event: ${editType}`)
                 console.log(`area: ${area}`)
-                setArea((turf.area(updatedData)/1000000).toFixed(2))
-                var newHexes = polygonToCells(updatedData['features'][updatedData['features'].length - 1]['geometry']['coordinates'], 6, true)
-                var newHexObject = hexagons.concat(convertToHexData(newHexes))
-                console.log(JSON.stringify(updatedData))
-                console.log(JSON.stringify(newHexObject))
-                setHexagons(newHexObject)
                 setGeoData(updatedData)
             }
         },
@@ -94,7 +97,7 @@ function App() {
     
     const hexagonLayer = new H3HexagonLayer({
         id: 'h3-hexagon-layer',
-        data: hexagons,
+        data: convertToHexagons(geoData, h3Level),
         pickable: true,
         filled: true,
         extruded: false,
@@ -104,7 +107,7 @@ function App() {
             return oldData.length == newData.length},
         getHexagon: d => d.hex,
         getFillColor: d => [255, 100, 0],
-        getLineWidth: d => 1000,
+        getLineWidth: (1/h3Level)*200,
         getLineColor: d => [255, 255, 255],
         getElevation: d => 0
         });
@@ -127,7 +130,7 @@ function App() {
                 </DeckGL>
             </div>
             <div className = "sidebox">
-                <Sidebox area={area} hexagonCount = {hexagons.length}/>
+                <Sidebox area={getArea(geoData)} hexagonCount = {convertToHexagons(geoData, h3Level).length} h3Level = {h3Level} setH3Level = {setH3Level} setGeoData = {setGeoData}/>
             </div>
         </div>
     );

@@ -1,3 +1,6 @@
+@import "../node_modules/@blueprintjs/core/lib/css/blueprint.css";
+@import "../node_modules/@blueprintjs/icons/lib/css/blueprint-icons.css";
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -18,6 +21,9 @@ h3 {
 }
 
 /* LAYOUT CSS */
+#page_body {
+    margin: 0px;
+}
 .pure-img-responsive {
     max-width: 100%;
     height: auto;
@@ -25,12 +31,6 @@ h3 {
 
 #layout {
     padding: 0;
-}
-
-.header {
-    text-align: center;
-    top: auto;
-    margin: 3em auto;
 }
 
 .sidebar {
@@ -46,39 +46,42 @@ h3 {
 .sidebox {
     top: 20px;
     left: 20px;
-    height: 90vh;
-    width: 200px;
-    background-color: rgb(0, 64, 112);
+    height: 500px;
+    width: 250px;
+    padding: 10px;
+    background-color: #ededed;
     position: absolute;
-    border-radius: 10px;
-
+    outline: 4px solid black;
+    border-radius: 2px;
 }
 .container {
     position: relative;
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .title {
-    color: antiquewhite;
-    font-family: Monaco, sans-serif;
     font-size: 2em;
-    padding: 10px;
+    font-weight: 500;
+
 }
 .subtitle {
-    color: antiquewhite;
-    font-family: Monaco, sans-serif;
     font-size: 1em;
-    padding: 10px;
+    font-weight: 600;
+    padding-top: 20px;
 }
 .results {
-    font-family: Monaco, sans-serif;
-    padding: 10px;
     font-size: .8em;
-    color: white;
 }
 .emoji {
     font-size: 5em;
     padding: 20px;
 }
-
+.optionBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 25vh;
+}
 
 @media (min-width: 48em) {
     .content {
