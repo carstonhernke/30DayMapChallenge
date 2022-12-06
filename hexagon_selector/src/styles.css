@@ -43,26 +43,33 @@ h3 {
     width: 100vw;
     height: 100vh;
 }
+.container {
+    position: relative;
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .sidebox {
     top: 20px;
     left: 20px;
-    height: 500px;
+    height: auto;
     width: 250px;
     padding: 10px;
     background-color: #ededed;
     position: absolute;
     outline: 4px solid black;
     border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.container {
-    position: relative;
-    color: black;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.menu {
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .title {
     font-size: 2em;
     font-weight: 500;
-
 }
 .subtitle {
     font-size: 1em;
@@ -75,12 +82,6 @@ h3 {
 .emoji {
     font-size: 5em;
     padding: 20px;
-}
-.optionBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 25vh;
 }
 
 @media (min-width: 48em) {

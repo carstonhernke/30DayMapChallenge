@@ -1,0 +1,1 @@
+{"mappings":"+MAAAA,E,iHAAAA,EAAmB,WACfC,QAAQC,IAAI,0CACd,C","sources":["node_modules/mapbox-gl/index.js"],"sourcesContent":["exports.printMsg = function() {\r\n    console.log(\"This is a message from the demo package\");\r\n  }"],"names":["$a5eae7820ba80068$export$9963fc5a8d52bf09","console","log"],"version":3,"file":"mapbox-gl.db8d103e.js.map"}

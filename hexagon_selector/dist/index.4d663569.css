@@ -14461,22 +14461,31 @@ h3 {
   bottom: 0;
 }
 
+.container {
+  color: #000;
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+}
+
 .sidebox {
-  height: 500px;
+  height: auto;
   width: 250px;
   background-color: #ededed;
   border-radius: 2px;
   outline: 4px solid #000;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 10px;
+  display: flex;
   position: absolute;
   top: 20px;
   left: 20px;
 }
 
-.container {
-  color: #000;
-  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
-  position: relative;
+.menu {
+  width: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .title {
@@ -14497,13 +14506,6 @@ h3 {
 .emoji {
   padding: 20px;
   font-size: 5em;
-}
-
-.optionBox {
-  height: 25vh;
-  flex-direction: column;
-  justify-content: space-evenly;
-  display: flex;
 }
 
 @media (min-width: 48em) {
