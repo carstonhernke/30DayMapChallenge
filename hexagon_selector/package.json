@@ -3,7 +3,7 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build --public-url https://www.carston.org/30DayMapChallenge/day_14_hexagon/dist/"
+    "build": "parcel build --public-url https://www.carston.org/30DayMapChallenge/hexagon_selector/dist/"
   },
   "devDependencies": {
     "buffer": "^5.7.1",
