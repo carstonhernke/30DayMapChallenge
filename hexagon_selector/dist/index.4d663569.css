@@ -14463,7 +14463,7 @@ h3 {
 
 .container {
   color: #000;
-  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Nunito, Tahoma, Geneva, Verdana, sans-serif;
   position: relative;
 }
 
@@ -14483,7 +14483,6 @@ h3 {
 }
 
 .menu {
-  width: 200px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -14495,12 +14494,12 @@ h3 {
 
 .subtitle {
   padding-top: 20px;
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: 600;
 }
 
 .results {
-  font-size: .8em;
+  font-size: 1em;
 }
 
 .emoji {

@@ -46,7 +46,7 @@ h3 {
 .container {
     position: relative;
     color: black;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Nunito', Tahoma, Geneva, Verdana, sans-serif;
 }
 .sidebox {
     top: 20px;
@@ -63,7 +63,6 @@ h3 {
     justify-content: space-between;
 }
 .menu {
-    width: 200px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -72,12 +71,12 @@ h3 {
     font-weight: 500;
 }
 .subtitle {
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 600;
     padding-top: 20px;
 }
 .results {
-    font-size: .8em;
+    font-size: 1em;
 }
 .emoji {
     font-size: 5em;
