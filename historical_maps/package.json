@@ -1,0 +1,22 @@
+{
+  "name": "day_14_hexagons",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build --public-url https://www.carston.org/30DayMapChallenge/day_14_hexagon/dist/"
+  },
+  "devDependencies": {
+    "buffer": "^5.7.1",
+    "parcel": "^2.8.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "@deck.gl/geo-layers": "^8.8.19",
+    "deck.gl": "^8.8.19",
+    "mapbox-gl": "npm:empty-npm-package@^1.0.0",
+    "maplibre-gl": "^2.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-map-gl": "^7.0.19"
+  }
+}

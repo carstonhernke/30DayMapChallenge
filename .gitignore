@@ -1,3 +1,4 @@
 node_modules
 qgis
 .parcel-cache
+.DS_Store
